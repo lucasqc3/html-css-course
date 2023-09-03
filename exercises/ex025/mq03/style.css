@@ -1,0 +1,25 @@
+html{
+    background-image: url(imagens/cev-landscape.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+}
+
+@media screen and (orientation: portrait){
+    html{
+        background-image: url(imagens/cev-portrait.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: left bottom;
+    }
+}
+@media screen and (orientation: landscape){
+    html{
+        background-image: url(imagens/cev-landscape.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center bottom;
+    }
+}
