@@ -16,6 +16,7 @@
     font-family: 'Passion One', cursive;
     font-family: 'Sriracha', cursive;
     user-select: none;
+    font-size: 1em;
 }
 
 body{
@@ -65,6 +66,10 @@ body{
     border-radius: 10px;
     color: white;
     text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
 }
 
 .inputContainer > label{
@@ -76,15 +81,10 @@ body{
 }
 
 .inputContainer > input{
-    display: inline-block;
+    width: 100%;
     border: 2px solid #F5B3A7;
     border-radius: 10px;
-    width: 90%;
     padding: 5px 10px;
-    font-size: 1em;
-}
-
-.inputContainer > input:focus{
 }
 
 .inputContainer > label > span{
@@ -95,7 +95,6 @@ body{
 #submitButton{
     width: 100%;
     background-color: rgb(99, 167, 150);
-    font-size: 1em;
     color: white;
     border: 0px;
     border-radius: 10px;
@@ -106,7 +105,6 @@ body{
 #recoverPassword{
     width: 100%;
     background-color: #637DA0;
-    font-size: 1em;
     color: white;
     border: 0px;
     border-radius: 10px;
