@@ -1,0 +1,95 @@
+@charset "UTF8";
+
+/* Color pallete
+#D9B0B3
+#BF9FBD
+#7C91BC
+#637DA0
+#F5B3A7
+*/
+
+@media screen and (min-width: 600px) and (max-width: 992px) {
+    #container{
+        display: flex;
+        max-height: 45vh;
+        align-items: center;
+        align-content: baseline;
+    }
+
+    #container > #imageContainer, #formContainer{
+        width: 40%;
+        height: 100%;
+        vertical-align: baseline;
+    }
+    #formContainer{
+        font-size: 1.3em;
+        width: 60%;
+    }
+    #formContainer > h1{
+        font-size: 2em;
+        margin: 0px 0px 20px;
+    }
+    #formContainer{
+        width: 60%;
+        height: auto;
+    }
+}
+
+@media screen and (min-width: 993px) and (max-width: 1199px){
+    #container{
+        max-width: 60vw;
+    }
+
+    #imageContainer{
+        height: 40%;
+    }
+    #formContainer{
+        width: 60%;
+        margin: auto;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    body{
+        width: 100vw;
+        height: 100vh;
+        background-image: linear-gradient(to bottom, #637DA0, #D9B0B3);
+    }
+    #container{
+        display: flex;
+        flex-direction: row-reverse;
+        max-height: 50vh;
+        max-width: 1000px;
+        align-items: center;
+        align-content: baseline;
+    }
+
+    #container > #imageContainer, #formContainer{
+        width: 40%;
+        height: 100%;
+    }
+    #imageContainer{
+        border-top-left-radius: 40px;
+        background-position: center right;
+    }
+    #formContainer{
+        font-size: 1.3em;
+        width: 60%;
+    }
+    #formContainer > h1{
+        font-size: 2em;
+        margin: 0px 0px 20px;
+    }
+
+    #submitButton:hover{
+        background-color: rgb(81, 136, 122);
+        scale: 1.03;
+        transition-duration: 0.3s;
+    }
+    
+    #recoverPassword:hover{
+        background-color: #4e6584;
+        scale: 1.03;
+        transition-duration: 0.3s;
+    }
+}

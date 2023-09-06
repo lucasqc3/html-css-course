@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilos/style.css" media="all">
-    <link rel="stylesheet" href="estilos/mediaqueries">
+    <link rel="stylesheet" href="estilos/mediaqueries.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lora&family=Passion+One&family=Sriracha&display=swap" rel="stylesheet">
@@ -19,14 +19,14 @@
             <div id="formContainer">
                 <h1>LOGIN</h1>
                 <p>É bom te ver por aqui novamente, preencha os seus dados de login abaixo para iniciar sua sessão!</p>
-                <form autocomplete="off">
+                <form autocomplete="off" method="post" action="">
                     <div class="inputContainer">
                         <label for="userEmail"><span class="material-symbols-outlined"> mail</span></label>
-                        <input type="email" name="userEmail" id="userEmail" required placeholder="usuário@email.com">
+                        <input type="email" name="userEmail" id="userEmail" required placeholder="usuário@email.com" maxlength="40">
                     </div>
                     <div class="inputContainer">
                         <label for="userPassword"><span class="material-symbols-outlined">key</span></label>
-                        <input type="password" name="userPassword" id="userPassword" required minlength="8" placeholder="senha">
+                        <input type="password" name="userPassword" id="userPassword" required minlength="8" placeholder="senha" maxlength="15">
                     </div>
                     <input type="submit" value="Entrar" id="submitButton">
                     <button type="button" id="recoverPassword">Recuperar Senha</button>
