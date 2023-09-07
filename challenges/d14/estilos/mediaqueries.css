@@ -26,8 +26,7 @@
         width: 60%;
     }
     #formContainer > h1{
-        font-size: 2em;
-        margin: 0px 0px 20px;
+        font-size: 1.2em;
     }
     #formContainer{
         width: 60%;
@@ -35,21 +34,7 @@
     }
 }
 
-@media screen and (min-width: 993px) and (max-width: 1199px){
-    #container{
-        max-width: 60vw;
-    }
-
-    #imageContainer{
-        height: 40%;
-    }
-    #formContainer{
-        width: 60%;
-        margin: auto;
-    }
-}
-
-@media screen and (min-width: 1200px){
+@media screen and (min-width: 993px){
     body{
         width: 100vw;
         height: 100vh;
@@ -91,5 +76,21 @@
         background-color: #4e6584;
         scale: 1.03;
         transition-duration: 0.3s;
+    }
+}
+
+@media screen and (orientation: landscape) and (min-width: 600px) and (max-width: 992px){
+    #container{
+        min-height: 92vh;
+    }
+    #formContainer{
+        padding: 0px 10px;
+    }
+    #formContainer > p{
+        font-size: 0.7em;
+    }
+
+    #recoverPassword{
+        margin: 0px;
     }
 }
